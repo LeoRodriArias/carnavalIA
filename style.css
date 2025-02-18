@@ -1,0 +1,367 @@
+  /* Paleta de colores representativa de Barranquilla */
+  :root {
+      --color-primary: #FF5722; /* Naranja (energía y calor caribeño) */
+      --color-secondary: #00B0FF; /* Azul Caribe (mar y cielo) */
+      --color-accent: #FFEB3B; /* Amarillo (soleado y vibrante) */
+      --color-background: #F5F5F5; /* Fondo neutro para contraste */
+      --color-dark: #212121;
+    }
+    
+    /* Personalización de colores */
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--color-background);
+      background-size: cover;
+      background-position: center;
+    }
+    /* Estilos para el menú de navegación mejorado */
+
+  /* Estilos para el menú de navegación */
+  /* Estilos para el menú de navegación */
+  /* Estilos para el menú de navegación */
+  .nav {
+    margin-top: 20px; /* Margen superior */
+    display: flex;
+    justify-content: flex-end; /* Alinea los enlaces a la derecha */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    padding: 0; /* Elimina el padding por defecto */
+    margin-left: 400px; /* Empuja el menú hacia la derecha */
+  }
+
+  .nav-link {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem; /* Tamaño más pequeño */
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #fff !important; /* Forzar color blanco */
+    margin: 0 8px; /* Espacio entre enlaces */
+    padding: 5px 10px;
+    border-radius: 20px; /* Bordes redondeados */
+    transition: all 0.3s ease;
+    text-decoration: none; /* Quita el subrayado */
+  }
+
+  .nav-link:hover {
+    background-color: var(--color-secondary); /* Cambia el color al pasar el mouse */
+    color: #fff !important; /* Mantener el color blanco al pasar el mouse */
+    transform: translateY(-2px); /* Efecto de elevación */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  }
+
+  /* Efecto activo para el enlace seleccionado */
+  .nav-link.active {
+    background-color: var(--color-secondary);
+    color: #fff !important; /* Mantener el color blanco */
+    font-weight: 900;
+  }
+    
+  .header-logo {
+    height: 80px; /* Ajusta el tamaño de la imagen */
+    width: auto; /* Mantiene la proporción de la imagen */
+    margin-right: 200px; /* Espacio entre la imagen y el menú */
+    
+  }
+    /* Estilos para la imagen de cabecera */
+  .header-banner {
+      background-image: url('fondo.jpg'); /* Cambia por la ruta de tu imagen */
+      background-size: cover;
+      background-position: center;
+      height: 900px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      position: relative;
+    }
+    
+    .header-banner::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5); /* Oscurece la imagen para mejorar la legibilidad del texto */
+    }
+    
+    .banner-content {
+      position: relative;
+      z-index: 1;
+    }
+    
+    .banner-title {
+      font-family: 'Quicksand', sans-serif;
+      font-size: 5rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin: 0;
+      animation: fadeInDown 2s ease-in-out;
+    }
+    
+    .banner-subtitle {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 400;
+      margin: 10px 0 0;
+      animation: fadeInUp 2s ease-in-out;
+    }
+    
+    /* Animaciones para el texto */
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    /* Efecto Parallax */
+    .parallax {
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+      height: 500px;
+      position: relative;
+    }
+    
+    .bg-primary {
+      background-color: var(--color-primary) !important;
+    }
+    
+    .btn-primary {
+      background-color: var(--color-primary);
+      border-color: var(--color-primary);
+      transition: all 0.3s ease;
+    }
+    
+    .btn-primary:hover {
+      background-color: var(--color-secondary);
+      transform: scale(1.1);
+    }
+    
+    .text-primary {
+      color: var(--color-primary);
+    }
+    
+    /* Estilo de las secciones */
+    header h1 {
+      font-family: 'Quicksand', sans-serif;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+    }
+    
+    section h2 {
+      font-family: 'Quicksand', sans-serif;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    
+    footer p {
+      font-size: 1rem;
+    }
+    
+    /* Estilo de las imágenes */
+    .history-image {
+      max-height: 500px;
+      object-fit: cover;
+    }
+    
+    /* Estilo de botones */
+    .btn-song {
+      background-color: var(--color-accent);
+      border: none;
+      font-size: 1.5rem;
+      color: #fff;
+      padding: 15px 30px;
+      border-radius: 30px;
+      transition: all 0.3s ease;
+      font-family: 'Quicksand', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+    }
+    
+    .btn-song:hover {
+      background-color: var(--color-primary);
+      transform: scale(1.1);
+    }
+    
+    .btn-song i {
+      margin-right: 10px;
+    }
+    
+    /* Efecto hover sobre las imágenes */
+    .hover-effect:hover {
+      transform: scale(1.05);
+      transition: all 0.3s ease-in-out;
+    }
+    
+    /* Animaciones */
+    .fade-in {
+      animation: fadeIn 2s ease-in-out;
+    }
+    
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    
+    /* Efectos de deslizamiento para secciones */
+    .slide-in-left {
+      animation: slideInLeft 1.5s ease-out;
+    }
+    
+    .slide-in-right {
+      animation: slideInRight 1.5s ease-out;
+    }
+    
+    @keyframes slideInLeft {
+      from {
+        transform: translateX(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+    
+    @keyframes slideInRight {
+      from {
+        transform: translateX(100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+    
+    /* Sección de servicios */
+    .service-card {
+      transition: transform 0.3s ease;
+      border-radius: 10px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    .service-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    }
+    
+    /* Mejorando el footer */
+    footer {
+      background-color: var(--color-dark);
+    }
+    
+    /* Estilo del mini juego */
+    .game-box {
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+      background-color: var(--color-accent);
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+    
+    .game-box img {
+      width: 100%; /* Cambié esto para que ocupe el 100% del contenedor */
+      max-width: 500px; /* Establezco un tamaño máximo de 500px */
+      cursor: pointer;
+      border-radius: 10px;
+    }
+    
+    /* Estilos para la galería */
+    .gallery img {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    /* Estilos para el formulario */
+    .form-group label {
+      font-weight: bold;
+    }
+    
+    /* Estilos para el mapa */
+    .embed-responsive {
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+
+    /* Estilos para las tarjetas */
+  .card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: none;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    .card-img-top {
+      height: 200px;
+      object-fit: cover;
+    }
+    
+    .card-body {
+      background-color: #fff;
+      padding: 20px;
+    }
+    
+    /* Estilos para la lista de eventos */
+    .list-group-item {
+      border: none;
+      background-color: var(--color-background);
+      margin-bottom: 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    
+    .list-group-item:hover {
+      background-color: var(--color-primary);
+      color: #fff;
+    }
+
+
+    /* Estilos para el menú de navegación */
+  .nav-link {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+      text-transform: uppercase;
+      margin: 0 10px;
+      padding: 5px 10px;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+    }
+    
+    .nav-link:hover {
+      background-color: var(--color-secondary);
+      color: #fff !important;
+      transform: translateY(-2px);
+    }
